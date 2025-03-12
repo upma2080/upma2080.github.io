@@ -29,10 +29,10 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <Image src="/logo.png" alt="AMS Logo" height={48} width={48} />
+          <Image src="/global.svg" alt="AMS Logo" height={48} width={48} />
           <div>
-            <h1 className="text-xl font-semibold text-blue-900">AMERICAN MATHEMATICAL SOCIETY</h1>
-            <p className="text-sm text-gray-500">Advancing research. Creating connections.</p>
+            <h1 className="text-xl font-semibold text-blue-900">Upma.org.np</h1>
+            <p className="text-sm text-gray-500">Comming Soon.</p>
           </div>
         </div>
 
