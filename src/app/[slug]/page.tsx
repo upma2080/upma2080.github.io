@@ -12,7 +12,6 @@ import Objectives from "./objectives";
 import Members from "./members";
 import Scholar from "./scholarshipsAwardsSupports";
 
-// Correct typing for the params object
 interface PageProps {
   params: {
     slug: string;
@@ -29,7 +28,7 @@ const Page = ({ params }: PageProps) => {
       {slug === "members" && <Members />}
       {slug === "scholarshipsAwardsSupports" && <Scholar />}
 
-      {/* Fallback for invalid or missing slugs */}
+      {/* Fallback if slug does not match any of the above */}
       {!slug || (slug !== "objectives" && slug !== "members" && slug !== "scholarshipsAwardsSupports") && (
         <div className="text-red-500">
           <p>Sorry, the page you are looking for does not exist.</p>
