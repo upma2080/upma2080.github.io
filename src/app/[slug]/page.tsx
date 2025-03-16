@@ -1,16 +1,19 @@
-"use client"; // Ensure this is a client component
+// Generate static params for Next.js to statically generate the paths
+export function generateStaticParams() {
+  return [
+    { slug: 'objectives' },
+    { slug: 'members' },
+    { slug: 'scholarshipsAwardsSupports' },
+    // Add more slugs as needed
+  ];
+}
 
 import Objectives from "./objectives";
 import Members from "./members";
 import Scholar from "./scholarshipsAwardsSupports";
-import { useParams } from "next/navigation";
 
-// Static params generation
-
-
-const Page = () => {
-  const params = useParams();
-  const slug = params?.slug;
+const Page = ({ params }: { params: { slug: string } }) => {
+  const { slug } = params;
 
   return (
     <div className="container mx-auto p-6">
