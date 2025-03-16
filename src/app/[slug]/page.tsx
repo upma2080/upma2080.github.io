@@ -1,8 +1,12 @@
 "use client"; // Ensure this is a client component
-import Objectives from "../../../pages/objectives"
-import Members from "../../../pages/members"
-import Scholar from "../../../pages/scholarshipsAwardsSupports"
+
+import Objectives from "./objectives";
+import Members from "./members";
+import Scholar from "./scholarshipsAwardsSupports";
 import { useParams } from "next/navigation";
+
+// Static params generation
+
 
 const Page = () => {
   const params = useParams();
@@ -10,11 +14,17 @@ const Page = () => {
 
   return (
     <div className="container mx-auto p-6">
-      {/* <h1 className="text-2xl font-bold">{slug?.toString().toUpperCase()}</h1>
-      <p>This is the content for {slug}.</p> */}
+      {/* Conditional rendering based on the slug */}
       {slug === "objectives" && <Objectives />}
       {slug === "members" && <Members />}
       {slug === "scholarshipsAwardsSupports" && <Scholar />}
+
+      {/* Fallback for invalid or missing slugs */}
+      {!slug || (slug !== "objectives" && slug !== "members" && slug !== "scholarshipsAwardsSupports") && (
+        <div className="text-red-500">
+          <p>Sorry, the page you are looking for does not exist.</p>
+        </div>
+      )}
     </div>
   );
 };
