@@ -12,7 +12,14 @@ import Objectives from "./objectives";
 import Members from "./members";
 import Scholar from "./scholarshipsAwardsSupports";
 
-const Page = ({ params }: { params: { slug: string } }) => {
+// Correct typing for the params object
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+const Page = ({ params }: PageProps) => {
   const { slug } = params;
 
   return (
