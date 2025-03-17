@@ -3,7 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { FaFacebook, FaResearchgate, FaGlobe } from "react-icons/fa"; // Importing icons
+import { FaFacebook, FaResearchgate, FaGlobe, FaGoogleScholar } from "react-icons/fa6"; // Importing icons
+import { FcFaq } from "react-icons/fc";
 
 const Header: React.FC = () => {
   const [dropdown, setDropdown] = useState<string | null>(null);
@@ -26,9 +27,13 @@ const Header: React.FC = () => {
       {/* 🔵 Top Header Section with Social Icons */}
       <div className="bg-blue-900 text-white text-sm py-2">
         <div className="container mx-auto flex justify-between px-6">
-          {/* Left Section: Social Links */}
+        <div className="flex space-x-4">
+            
+          </div>
+
+          {/* Right Section: Other Links */}
           <div className="flex space-x-4">
-            <Link href="https://www.researchgate.net/profile/Urmila-Pyakurel" target="_blank" className="hover:text-gray-300">
+          <Link href="https://www.researchgate.net/profile/Urmila-Pyakurel" target="_blank" className="hover:text-gray-300">
               <FaResearchgate size={20} />
             </Link>
             <Link href="https://www.facebook.com/urmila.pyakurel" target="_blank" className="hover:text-gray-300">
@@ -37,12 +42,10 @@ const Header: React.FC = () => {
             <Link href="https://urmila.cdmathtu.edu.np/" target="_blank" className="hover:text-gray-300">
               <FaGlobe size={20} />
             </Link>
-          </div>
-
-          {/* Right Section: Other Links */}
-          <div className="flex space-x-6">
-            <Link href="https://scholar.google.com/citations?hl=en&user=-T3agEwAAAAJ" className="hover:underline">Google Scholar</Link>
-            <Link href="#" className="hover:underline">FAQ's</Link>
+            <Link href="https://scholar.google.com/citations?hl=en&user=-T3agEwAAAAJ" target="_blank" className="hover:text-gray-300">
+              <FaGoogleScholar size={20} />
+            </Link>
+            <Link href="#" className="hover:underline"><FcFaq /></Link>
           </div>
         </div>
       </div>
@@ -57,7 +60,7 @@ const Header: React.FC = () => {
                 Prof. Dr. Urmila Pyakurel Madhushree Academy
               </span>
             </h1>
-            <p className="text-sm text-gray-500">प्रो. डा. उर्मिला प्याकुरेल मधुश्री एकेडमी</p>
+            <p className="text-sm text-gray-500"> प्रा. डा. उर्मिला प्याकुरेल मधुश्री प्रतिष्ठान</p>
           </div>
         </div>
       </div>
@@ -94,6 +97,7 @@ const Header: React.FC = () => {
             </li>
 
             <li><Link href="/photo-gallery" className="hover:underline">Photo Gallery</Link></li>
+            <li><Link href="/research" className="hover:underline">Research</Link></li>
           </ul>
         </div>
       </nav>

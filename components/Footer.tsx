@@ -17,6 +17,9 @@ const Footer: React.FC = () => {
           <Link href="https://urmila.cdmathtu.edu.np/" target="_blank" className="hover:underline">
             Personal Website
           </Link>
+          <Link href="https://scholar.google.com/citations?hl=en&user=-T3agEwAAAAJ" target="_blank" className="hover:underline">
+            Google Scholar
+          </Link>
         </div>
         <p className="text-sm text-gray-300 mt-4">© 2025 Prof. Dr. Urmila Pyakurel Madhushree Academy. All rights reserved.</p>
       </div>
