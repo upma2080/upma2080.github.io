@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { FaFacebook, FaResearchgate, FaGlobe } from "react-icons/fa"; // Importing icons
 
 const Header: React.FC = () => {
   const [dropdown, setDropdown] = useState<string | null>(null);
@@ -12,36 +13,46 @@ const Header: React.FC = () => {
     setDropdown(dropdown === menu ? null : menu);
   };
 
-  // Toggle the language every 1 second
   useEffect(() => {
     const interval = setInterval(() => {
       setIsNepali((prev) => !prev);
     }, 1000);
 
-    // Cleanup interval on component unmount
     return () => clearInterval(interval);
   }, []);
 
   return (
     <header className="bg-white shadow">
-      {/* Top Navigation */}
+      {/* 🔵 Top Header Section with Social Icons */}
       <div className="bg-blue-900 text-white text-sm py-2">
-        <div className="container mx-auto flex justify-end space-x-6 px-6">
-          <Link href="https://scholar.google.com/citations?hl=en&user=-T3agEwAAAAJ" className="hover:underline">Google Scholar</Link>
-          <Link href="#" className="hover:underline">FAQ's</Link>
+        <div className="container mx-auto flex justify-between px-6">
+          {/* Left Section: Social Links */}
+          <div className="flex space-x-4">
+            <Link href="https://www.researchgate.net/profile/Urmila-Pyakurel" target="_blank" className="hover:text-gray-300">
+              <FaResearchgate size={20} />
+            </Link>
+            <Link href="https://www.facebook.com/urmila.pyakurel" target="_blank" className="hover:text-gray-300">
+              <FaFacebook size={20} />
+            </Link>
+            <Link href="https://urmila.cdmathtu.edu.np/" target="_blank" className="hover:text-gray-300">
+              <FaGlobe size={20} />
+            </Link>
+          </div>
+
+          {/* Right Section: Other Links */}
+          <div className="flex space-x-6">
+            <Link href="https://scholar.google.com/citations?hl=en&user=-T3agEwAAAAJ" className="hover:underline">Google Scholar</Link>
+            <Link href="#" className="hover:underline">FAQ's</Link>
+          </div>
         </div>
       </div>
 
-      {/* Main Navigation */}
+      {/* 🔵 Main Navigation */}
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <div className="flex items-center space-x-3">
           <Image src="/logo.png" alt="Logo" height={100} width={70} />
           <div>
             <h1 className="text-xl font-semibold text-blue-900">
-              {/* Animated Heading */}
-              {/* <span className={`transition-all duration-2000 ${isNepali ? 'opacity-100' : 'opacity-0'}`}>
-                प्रो. डा. उर्मिला प्याकुरेल मधुश्री एकेडमी
-              </span> */}
               <span className={`transition-all duration-2000 ${isNepali ? 'opacity-0' : 'opacity-100'}`}>
                 Prof. Dr. Urmila Pyakurel Madhushree Academy
               </span>
@@ -51,7 +62,7 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Navigation Links */}
+      {/* 🔵 Navigation Links */}
       <nav className="bg-blue-900">
         <div className="container mx-auto">
           <ul className="flex space-x-6 text-white text-sm py-3 px-6">
@@ -59,7 +70,8 @@ const Header: React.FC = () => {
             <li><Link href="/objectives" className="hover:underline">Objectives</Link></li>
             <li><Link href="/madhushree" className="hover:underline">Madhushree</Link></li>
             <li><Link href="/members/" className="hover:underline">Members</Link></li>
-            {/* <li><Link href="/scholarshipsAwardsSupports" className="hover:underline">Scholarships/Awards</Link></li> */}
+
+            {/* 🔽 Scholarships Dropdown */}
             <li className="relative">
               <button onClick={() => toggleDropdown('scholarshipsAwardsSupports')} className="hover:underline">Scholarships/Awards ▼</button>
               {dropdown === 'scholarshipsAwardsSupports' && (
@@ -69,7 +81,8 @@ const Header: React.FC = () => {
                 </ul>
               )}
             </li>      
-            {/* Activities Dropdown */}
+
+            {/* 🔽 Activities Dropdown */}
             <li className="relative">
               <button onClick={() => toggleDropdown('activities')} className="hover:underline">Activities ▼</button>
               {dropdown === 'activities' && (
