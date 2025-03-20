@@ -25,7 +25,7 @@ const AcademyInfo = () => {
               { position: "Member", name: "Ms. Laxmi Pyakurel" },
             ].map((member, index) => (
               <li key={index} className="border-b pb-2">
-                <strong>{member.position}:</strong> {member.name}
+                <strong>{member.position}: </strong> {member.name}
               </li>
             ))}
           </ul>

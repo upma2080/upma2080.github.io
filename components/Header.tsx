@@ -3,37 +3,39 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { FaFacebook, FaResearchgate, FaGlobe, FaGoogleScholar } from "react-icons/fa6"; // Importing icons
+import { usePathname } from "next/navigation";
+import { FaFacebook, FaResearchgate, FaGlobe, FaGoogleScholar } from "react-icons/fa6";
 import { FcFaq } from "react-icons/fc";
 
 const Header: React.FC = () => {
   const [dropdown, setDropdown] = useState<string | null>(null);
   const [isNepali, setIsNepali] = useState<boolean>(false);
+  const pathname = usePathname();  // ✅ Listen to route changes
 
-  const toggleDropdown = (menu: string) => {
-    setDropdown(dropdown === menu ? null : menu);
-  };
+  // ✅ Auto-close dropdown on route change
+  useEffect(() => {
+    setDropdown(null);
+  }, [pathname]);  // 🔥 Triggers whenever route/path changes
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIsNepali((prev) => !prev);
     }, 1000);
-
     return () => clearInterval(interval);
   }, []);
 
+  const toggleDropdown = (menu: string) => {
+    setDropdown(dropdown === menu ? null : menu);
+  };
+
   return (
     <header className="bg-white shadow">
-      {/* 🔵 Top Header Section with Social Icons */}
+      {/* 🔵 Top Header */}
       <div className="bg-blue-900 text-white text-sm py-2">
         <div className="container mx-auto flex justify-between px-6">
-        <div className="flex space-x-4">
-            
-          </div>
-
-          {/* Right Section: Other Links */}
+          <div className="flex space-x-4"></div>
           <div className="flex space-x-4">
-          <Link href="https://www.researchgate.net/profile/Urmila-Pyakurel" target="_blank" className="hover:text-gray-300">
+            <Link href="https://www.researchgate.net/profile/Urmila-Pyakurel" target="_blank" className="hover:text-gray-300">
               <FaResearchgate size={20} />
             </Link>
             <Link href="https://www.facebook.com/urmila.pyakurel" target="_blank" className="hover:text-gray-300">
@@ -50,7 +52,7 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* 🔵 Main Navigation */}
+      {/* 🔵 Logo & Title */}
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <div className="flex items-center space-x-3">
           <Image src="/logo.png" alt="Logo" height={100} width={70} />
@@ -60,38 +62,31 @@ const Header: React.FC = () => {
                 Prof. Dr. Urmila Pyakurel Madhushree Academy
               </span>
             </h1>
-            <p className="text-sm text-gray-500"> प्रा. डा. उर्मिला प्याकुरेल मधुश्री प्रतिष्ठान</p>
+            <p className="text-xl text-gray-500"> प्रा. डा. उर्मिला प्याकुरेल मधुश्री प्रतिष्ठान</p>
           </div>
         </div>
       </div>
 
-      {/* 🔵 Navigation Links */}
+      {/* 🔵 Navigation */}
       <nav className="bg-blue-900">
         <div className="container mx-auto">
           <ul className="flex space-x-6 text-white text-sm py-3 px-6">
-            <li><Link href="/" className="hover:underline">About</Link></li>
+            <li><Link href="/about" className="hover:underline">About</Link></li>
             <li><Link href="/objectives" className="hover:underline">Objectives</Link></li>
             <li><Link href="/madhushree" className="hover:underline">Madhushree</Link></li>
             <li><Link href="/members/" className="hover:underline">Members</Link></li>
+            <li><Link href="/activities" className="hover:underline">Activities</Link></li>
 
             {/* 🔽 Scholarships Dropdown */}
             <li className="relative">
-              <button onClick={() => toggleDropdown('scholarshipsAwardsSupports')} className="hover:underline">Scholarships/Awards ▼</button>
+              <button onClick={() => toggleDropdown('scholarshipsAwardsSupports')} className="hover:underline">
+                Scholarships/Awards ▼
+              </button>
               {dropdown === 'scholarshipsAwardsSupports' && (
-                <ul className="absolute bg-white text-black shadow-md rounded-md py-2 w-48">
+                <ul className="absolute bg-white text-black shadow-md rounded-md py-2 w-48 z-50">
+                  <li><Link href="/scholarshipsAwardsSupports/rules" className="block px-4 py-2 hover:bg-gray-200">Rules</Link></li>
                   <li><Link href="/scholarshipsAwardsSupports/2080" className="block px-4 py-2 hover:bg-gray-200">2080</Link></li>
                   <li><Link href="/2081" className="block px-4 py-2 hover:bg-gray-200">2081</Link></li>
-                </ul>
-              )}
-            </li>      
-
-            {/* 🔽 Activities Dropdown */}
-            <li className="relative">
-              <button onClick={() => toggleDropdown('activities')} className="hover:underline">Activities ▼</button>
-              {dropdown === 'activities' && (
-                <ul className="absolute bg-white text-black shadow-md rounded-md py-2 w-48">
-                  <li><Link href="/activities/general-assembly" className="block px-4 py-2 hover:bg-gray-200">4.1 General Assembly</Link></li>
-                  <li><Link href="/activities/others" className="block px-4 py-2 hover:bg-gray-200">4.2 Others</Link></li>
                 </ul>
               )}
             </li>

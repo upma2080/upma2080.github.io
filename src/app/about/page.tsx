@@ -11,7 +11,7 @@ const About: React.FC = () => {
       {/* Left Content */}
       <div className="flex-2">
         <h1 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
-          Honoring <span className="text-green-600">Prof. Dr. Urmila Pyakurel</span>
+          Honoring <span className="text-blue-900 mb-6">Prof. Dr. Urmila Pyakurel</span>
         </h1>
 
         {/* Always Visible Paragraph */}
