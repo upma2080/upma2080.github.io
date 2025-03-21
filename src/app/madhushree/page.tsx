@@ -17,7 +17,7 @@ export default function MadhushreePage() {
       {/* Example iFrame for the Book */}
       <div className="w-full h-[80vh] border shadow-lg rounded overflow-hidden">
         <iframe
-          src="/path-to-your-book.pdf" // Replace this with your actual PDF path or external link
+          src="/Madhurash.pdf" // Replace this with your actual PDF path or external link
           width="100%"
           height="100%"
           allowFullScreen
