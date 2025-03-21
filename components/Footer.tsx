@@ -22,6 +22,8 @@ const Footer: React.FC = () => {
           </Link>
         </div>
         <p className="text-sm text-gray-300 mt-4">© 2025 Prof. Dr. Urmila Pyakurel Madhushree Academy. All rights reserved.</p>
+        <p className="text-sm text-gray-300 mt-4">Designed by <a href="https://sunilregmi233.com.np">Sunil Regmi</a></p>
+
       </div>
     </footer>
   );
