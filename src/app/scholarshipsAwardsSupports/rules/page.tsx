@@ -3,13 +3,13 @@
 export default function RulesPage() {
   return (
     <main className="container mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold text-purple-800 mb-10">
+      <h1 className="text-4xl font-bold text-blue-800 mb-10">
         Awards, Fellowships, Scholarships & Support Rules
       </h1>
 
       {/* Best Student Award */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
           Prof. Dr. Urmila Pyakurel Best Student Award
         </h2>
         <p className="text-gray-800 leading-relaxed">
@@ -24,7 +24,7 @@ export default function RulesPage() {
 
       {/* SEE Scholarship */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
           Prof. Dr. Urmila Pyakurel Best Student Scholarship (SEE Topper)
         </h2>
         <p className="text-gray-800 leading-relaxed">
@@ -37,7 +37,7 @@ export default function RulesPage() {
 
       {/* Kalika Primary School Scholarship */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
           Prof. Dr. Urmila Pyakurel Best Student Scholarship (Kalika Primary School)
         </h2>
         <p className="text-gray-800 leading-relaxed">
@@ -49,7 +49,7 @@ export default function RulesPage() {
 
       {/* Publication Sponsorship */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
           Prof. Dr. Urmila Pyakurel Publication Sponsorship
         </h2>
         <p className="text-gray-800 leading-relaxed">
@@ -69,7 +69,7 @@ export default function RulesPage() {
 
       {/* Madhushree Literary Award */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
           Prof. Dr. Urmila Pyakurel Madhushree Award
         </h2>
         <p className="text-gray-800 leading-relaxed">
@@ -82,7 +82,7 @@ export default function RulesPage() {
 
       {/* Grant Support */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
           Prof. Dr. Urmila Pyakurel Grant
         </h2>
         <p className="text-gray-800 leading-relaxed">
@@ -96,7 +96,7 @@ export default function RulesPage() {
 
       {/* Cancer Patient Support */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
           Cancer Patient Support
         </h2>
         <p className="text-gray-800 leading-relaxed">
@@ -106,7 +106,7 @@ export default function RulesPage() {
 
       {/* Reserved Fund */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
           Reserved Fund
         </h2>
         <p className="text-gray-800 leading-relaxed">

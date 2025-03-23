@@ -39,7 +39,7 @@ const awardsData = [
 const AwardsPage = () => {
   return (
     <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-6">Scholarships, Awards & Supports</h1>
+      <h1 className="text-2xl font-bold mb-6">Awards, Fellowships, Scholarships & Support Rules</h1>
       <div className="space-y-6">
         {awardsData.map((award, index) => (
           <div key={index} className="p-4 border rounded-lg shadow-md">

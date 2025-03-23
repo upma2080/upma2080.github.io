@@ -12,7 +12,7 @@ export default function MadhushreePage() {
         आगामि दिनमा उहाँका कथा, संश्मरण र उपन्यास प्रकाशन गर्दै जाने योजना रहेको छ ।
       </p>
 
-      <h2 className="text-2xl font-semibold text-blue-600 mb-4">पुस्तक पढ्नुहोस्:</h2>
+      <h2 className="text-2xl font-semibold text-blue-600 mb-4">मधुरस पढ्नुहोस्:</h2>
 
       {/* Example iFrame for the Book */}
       <div className="w-full h-[80vh] border shadow-lg rounded overflow-hidden">

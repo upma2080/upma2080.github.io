@@ -6,10 +6,12 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { FaFacebook, FaResearchgate, FaGlobe, FaGoogleScholar } from "react-icons/fa6";
 import { FcFaq } from "react-icons/fc";
+import { FaBars, FaTimes } from "react-icons/fa"; // Import hamburger (FaBars) and close (FaTimes) icons
 
 const Header: React.FC = () => {
   const [dropdown, setDropdown] = useState<string | null>(null);
   const [isNepali, setIsNepali] = useState<boolean>(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();  // ✅ Listen to route changes
 
   // ✅ Auto-close dropdown on route change
@@ -26,6 +28,10 @@ const Header: React.FC = () => {
 
   const toggleDropdown = (menu: string) => {
     setDropdown(dropdown === menu ? null : menu);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -62,7 +68,7 @@ const Header: React.FC = () => {
                 Prof. Dr. Urmila Pyakurel Madhushree Academy
               </span>
             </h1>
-            <p className="text-xl text-gray-500"> प्रा. डा. उर्मिला प्याकुरेल मधुश्री प्रतिष्ठान</p>
+            <p className="text-xl text-gray-500">प्रा. डा. उर्मिला प्याकुरेल मधुश्री प्रतिष्ठान</p>
           </div>
         </div>
       </div>
@@ -70,7 +76,19 @@ const Header: React.FC = () => {
       {/* 🔵 Navigation */}
       <nav className="bg-blue-900">
         <div className="container mx-auto">
-          <ul className="flex space-x-6 text-white text-sm py-3 px-6">
+          {/* Mobile Menu Button (Hamburger Icon) */}
+          <div className="flex justify-between items-center py-3 px-6 md:hidden">
+            <button onClick={toggleMobileMenu} className="text-white">
+              {isMobileMenuOpen ? (
+                <FaTimes size={30} /> // Close icon (X) when the menu is open
+              ) : (
+                <FaBars size={30} /> // Hamburger icon when the menu is closed
+              )}
+            </button>
+          </div>
+
+          {/* Desktop Navigation Links */}
+          <ul className={`flex space-x-6 text-white text-sm py-3 px-6 md:flex ${isMobileMenuOpen ? 'flex-col' : 'hidden md:flex'}`}>
             <li><Link href="/about" className="hover:underline">About</Link></li>
             <li><Link href="/objectives" className="hover:underline">Objectives</Link></li>
             <li><Link href="/madhushree" className="hover:underline">Madhushree</Link></li>

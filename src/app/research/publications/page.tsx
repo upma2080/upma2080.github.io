@@ -69,7 +69,7 @@ export default function Page() {
   return (
     <main className="container mx-auto px-6 py-12">
       <h1 className="text-4xl font-bold text-blue-900 mb-8">
-        Articles of Prof. Pyakurel After Death
+        Posthumous Publications of Prof. Pyakurel
       </h1>
 
       <p className="text-gray-700 text-lg mb-10 leading-relaxed">

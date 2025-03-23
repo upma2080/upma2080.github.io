@@ -31,7 +31,7 @@ export default function ResearchPage() {
 
 {activeTab === "publications" && (
   <div className="space-y-8">
-    <h2 className="text-2xl font-bold text-blue-900 mb-4">Articles of Prof. Pyakurel After Death</h2>
+    <h2 className="text-2xl font-bold text-blue-900 mb-4">Posthumous Publications of Prof. Pyakurel</h2>
     <p className="text-gray-700 leading-relaxed mb-6">
       The articles listed below represent a remarkable body of work that continues to contribute 
       to the fields of operations research, optimization, and evacuation planning. Although these 
