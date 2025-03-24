@@ -18,7 +18,7 @@ const About: React.FC = () => {
         <p className="text-gray-700 text-lg mb-6 text-justify">
         It is with profound respect and gratitude that we honor the life and legacy of Prof. Dr. Urmila Pyakurel, also known as Madhushree, the guiding light and inspiration. 
         </p>
-        <p>
+        <p className="text-gray-700 text-lg mb-6 text-justify">
           Born in June 1980 in Sunkoshi Rural Municipality, Sindhupalchok, Nepal, as the youngest daughter of Debi Nath and Mana Maya Pyakurel, Professor Pyakurel displayed an extraordinary curiosity and dedication to learn from her earliest years. Her academic journey began at Kalika Aadharbhut Bidhyalaya, Sindhupalchowk, where she laid the foundation for a lifelong pursuit of knowledge. She completed her school education at Bagh Bhairabh Secondary School, Sindhupalchowk, where her academic brilliance and compassionate nature began to shine. 
         </p>
         {/* Hidden Content */}
@@ -29,7 +29,7 @@ const About: React.FC = () => {
             Driven by an insatiable thirst for knowledge, she pursued higher education at Tribhuvan University, where she earned her Master’s degree in Mathematics and later a Doctorate of Philosophy in Mathematics on the topic "Evacuation Planning Problem with Contraflow Approach" under the supervision of her doctoral father Prof. Dr. Tanka Nath Dhamala. Her unwavering commitment to academic excellence and passion for research in the field of network optimization, graph theory and many others, set the stage for a remarkable career. 
             </p>
             <p>
-            Professor Pyakurel began her illustrious career as a lecturer at Tribhuvan University, where her passion for teaching and mentor-ship quickly became evident. Through her dedication and hard work, she rose through the ranks, securing the position of Associate Professor through an open competition, a testament to her exceptional abilities and commitment to her field. Her journey culminated in her appointment as a Professor, making her the youngest Professor of Mathematics at Tribhuvan University. In her role as a professor, she was not only a gifted educator but also a mentor who nurtured the potential of her students. Her innovative teaching methods and ability to simplify complex concepts made her a beloved figure among her pupils.  
+            Professor Pyakurel began her illustrious career as a lecturer at Tribhuvan University, where her passion for teaching and mentorship quickly became evident. Through her dedication and hard work, she rose through the ranks, securing the position of Associate Professor through an open competition, a testament to her exceptional abilities and commitment to her field. Her journey culminated in her appointment as a Professor, making her the youngest Professor of Mathematics at Tribhuvan University. In her role as a professor, she was not only a gifted educator but also a mentor who nurtured the potential of her students. Her innovative teaching methods and ability to simplify complex concepts made her a beloved figure among her pupils.  
 
             </p>
             <p>
@@ -53,12 +53,12 @@ const About: React.FC = () => {
 
             </p>
             <p>
-            The Academy, established with funds raised for her treatment, is committed to advancing her research aspirations through encouraging young scholars. We sincerely appreciate all national and international co-researchers, sponsors, and scientific pioneers associated with Urmila for their valuable contributions. We remain highly optimistic that your future research—whether in mathematics or Nepali literature, both of which were Urmila's passions—will serve as a significant milestone in fulfilling the Academy's mission.
+            The Academy, established with funds raised for her treatment, is committed to advancing her research aspirations through encouraging young scholars. We sincerely appreciate all national and international co-researchers, sponsors, and scientific pioneers associated with Urmila for their valuable contributions. We remain highly optimistic that your future research whether in mathematics or Nepali literature, both of which were Urmila's passions will serve as a significant milestone in fulfilling the Academy's mission.
 
             </p>
             <p>
             President and Academy Family <br />
-            Professor Dr. Urmila Puakurel Madhushree Academy
+            Professor Dr. Urmila Pyakurel Madhushree Academy
             </p>
             
           </div>
