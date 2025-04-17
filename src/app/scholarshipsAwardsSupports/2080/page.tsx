@@ -2,17 +2,17 @@ import React from "react";
 
 const awardsData = [
   {
-    category: "Outstanding Student Award",
+    category: "Prof. Dr. Urmila Pyakurel Best Student Scholarship (Kalika Primary School)",
     institution: "Bhag Bhairav Secondary School, Sunkoshi-1, Sindhupalchok",
     recipients: ["Anjeeta Pahari (2080)"]
   },
   {
-    category: "Outstanding Student Award",
+    category: "Prof. Dr. Urmila Pyakurel Best Student Scholarship (SEE Topper)",
     institution: "Shree Kalika Secondary School, Sunkoshi-3, Sindhupalchok",
     recipients: ["Anuja Majhi (2080)"]
   },
   {
-    category: "Outstanding Award",
+    category: "Prof. Dr. Urmila Pyakurel Best Student Award",
     institution: "Tribhuvan University, Central Department of Mathematics, Kirtipur",
     recipients: [
       "Mr. Dhurba Paudel (2076)",
@@ -22,16 +22,16 @@ const awardsData = [
     ]
   },
   {
-    category: "Professor Dr. Urmila Pyakurel Madhushree Literary Award",
+    category: "Prof. Dr. Urmila Pyakurel Madhushree Award",
     year: "2080/81",
     recipients: ["Dr. Nawaraj Lamsal"]
   },
   {
-    category: "Research Encouragement Grant",
+    category: "Prof. Dr. Urmila Pyakurel Grant",
     recipients: ["Ms. Jayanti Saud", "Alina Shrestha"]
   },
   {
-    category: "Support for Cancer Patients",
+    category: "Cancer Patient Support",
     recipients: ["Ms. Bimala Mishra", "Pusparaj Bhandari"]
   }
 ];
