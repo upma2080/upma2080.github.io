@@ -4,44 +4,56 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-blue-900 text-white py-6 mt-10">
-      <div className="container mx-auto text-center px-4 sm:px-6">
-        {/* Research Section */}
-        <div>
-          <p className="text-lg font-semibold">Connect with Us</p>
-          <div className="flex flex-wrap justify-center space-x-6 mt-4">
-            <Link href="https://www.researchgate.net/profile/Urmila-Pyakurel" target="_blank" className="hover:underline">
-              ResearchGate
-            </Link>
-            <Link href="https://www.facebook.com/urmila.pyakurel" target="_blank" className="hover:underline">
-              Facebook
-            </Link>
-            <Link href="https://urmila.cdmathtu.edu.np/" target="_blank" className="hover:underline">
-              Personal Website
-            </Link>
-            <Link href="https://scholar.google.com/citations?hl=en&user=-T3agEwAAAAJ" target="_blank" className="hover:underline">
-              Google Scholar
-            </Link>
+    <footer className="bg-gray-800 text-white py-12 mt-10">
+      <div className="container mx-auto px-6 sm:px-12">
+        {/* Main Footer Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
+          {/* Research Links Section */}
+          <div className="space-y-6">
+            <p className="text-2xl font-semibold text-blue-400">Research Contributions</p>
+            <p className="text-sm text-gray-400">
+              You may find the scientific contributions of Prof. Dr. Urmila Pyakurel through the following links.
+            </p>
+            <div className="flex flex-wrap space-x-6">
+              <Link href="https://www.researchgate.net/profile/Urmila-Pyakurel" target="_blank" className="hover:text-blue-300">
+                ResearchGate
+              </Link>
+              <Link href="https://www.facebook.com/urmila.pyakurel" target="_blank" className="hover:text-blue-300">
+                Facebook
+              </Link>
+              <Link href="https://urmila.cdmathtu.edu.np/" target="_blank" className="hover:text-blue-300">
+                Personal Website
+              </Link>
+              <Link href="https://scholar.google.com/citations?hl=en&user=-T3agEwAAAAJ" target="_blank" className="hover:text-blue-300">
+                Google Scholar
+              </Link>
+            </div>
           </div>
-          <p className="text-sm text-gray-300 mt-4">You may find the scientific contribution of Prof. Dr. Urmila Pyakurel through the following links.</p>
-        </div>
 
-        {/* Contact Section */}
-        <div className="mt-8">
-          <p className="text-lg font-semibold">Contact Us</p>
-          <p className="text-sm text-gray-300 mt-2">
-            Email: <a href="mailto:upama2080@gmail.com" className="text-blue-400 hover:underline">upama2080@gmail.com</a>
-          </p>
-          <p className="text-sm text-gray-300">
-            Mobile: <a href="tel:+9779861656319" className="text-blue-400 hover:underline">+977-9861656319</a>
-          </p>
-        </div>
+          {/* Contact Section */}
+          <div className="space-y-6">
+            <p className="text-2xl font-semibold text-blue-400">Contact Information</p>
+            <p className="text-sm text-gray-400">
+              If you have any questions or inquiries, feel free to contact us:
+            </p>
+            <div>
+              <p className="text-sm text-gray-300">
+                Email: <a href="mailto:upama2080@gmail.com" className="text-blue-400 hover:underline">upama2080@gmail.com</a>
+              </p>
+              <p className="text-sm text-gray-300">
+                Mobile: <a href="tel:+9779861656319" className="text-blue-400 hover:underline">+977-9861656319</a>
+              </p>
+            </div>
+          </div>
 
-        {/* Copyright Section */}
-        <p className="text-sm text-gray-300 mt-6">© 2025 Prof. Dr. Urmila Pyakurel Madhushree Academy. All rights reserved.</p>
-        <p className="text-xs text-gray-300 " style={{ fontSize: '8px' }}>
-          Designed by <a href="https://sunilregmi233.com.np" className="hover:underline">Sunil Regmi</a>
-        </p>
+        </div>
+      </div>
+
+      {/* Footer Bottom Bar */}
+      <div className="bg-gray-700 py-4 mt-12 text-center text-gray-400">
+        <p className="text-sm"> © Prof. Dr. Urmila Pyakurel Madhushree Academy | All Rights Reserved</p>
+        <p className="text-sm">Designed by Sunil Regmi</p>
       </div>
     </footer>
   );
