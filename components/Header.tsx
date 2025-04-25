@@ -91,7 +91,7 @@ const Header: React.FC = () => {
           <ul className={`flex space-x-6 text-white text-sm py-3 px-6 md:flex ${isMobileMenuOpen ? 'flex-col' : 'hidden md:flex'}`}>
             <li><Link href="/about" className="hover:underline">About</Link></li>
             <li><Link href="/objectives" className="hover:underline">Objectives</Link></li>
-            <li><Link href="/madhushree" className="hover:underline">Madhushree</Link></li>
+            <li><Link href="/madhushree" className="hover:underline">Publication</Link></li>
             <li><Link href="/members/" className="hover:underline">Members</Link></li>
             <li><Link href="/activities" className="hover:underline">Activities</Link></li>
 
@@ -103,8 +103,8 @@ const Header: React.FC = () => {
               {dropdown === 'scholarshipsAwardsSupports' && (
                 <ul className="absolute bg-white text-black shadow-md rounded-md py-2 w-48 z-50">
                   <li><Link href="/scholarshipsAwardsSupports/rules" className="block px-4 py-2 hover:bg-gray-200">Rules</Link></li>
-                  <li><Link href="/scholarshipsAwardsSupports/2080" className="block px-4 py-2 hover:bg-gray-200">2080</Link></li>
-                  <li><Link href="/2081" className="block px-4 py-2 hover:bg-gray-200">2081</Link></li>
+                  <li><Link href="/scholarshipsAwardsSupports/2081" className="block px-4 py-2 hover:bg-gray-200">2081</Link></li>
+                  <li><Link href="/scholarshipsAwardsSupports/2082" className="block px-4 py-2 hover:bg-gray-200">2082</Link></li>
                 </ul>
               )}
             </li>

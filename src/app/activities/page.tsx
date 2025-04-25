@@ -7,6 +7,71 @@ export default function Activities() {
     <main className="container mx-auto px-6 py-16 space-y-24">
       {/* Page Title */}
 
+      <section className="bg-white p-10 rounded-3xl shadow-lg space-y-8 border-l-8 border-blue-500">
+        <div className="space-y-3">
+          <h2 className="text-3xl font-semibold text-blue-800">Second memorial day of Prof. Dr. Urmila Pyakurel</h2>
+          <p className="text-gray-600 text-lg">📅 Date: April 19, 2025 ( Baisakh 6, 2082)</p>
+          <p>On the occasion of the second memorial day of Prof. Dr. Urmila Pyakurel, the &quot;Prof. Dr.
+Urmila Pyakurel Madhushree Academy&quot; honored two researchers, Dr. Durga Prasad
+Khanal and Mr. Mohan Chandra Adhikari, with awards in recognition of their contributions
+to solving traffic flow problems and minimizing congestion. The awarded research papers were
+co-authored by Prof. Dr. Tanka Nath Dhamala and Prof. Dr. Stephan Dempe, and by Prof.
+Dr. Tanka Nath Dhamala, respectively.</p>
+        </div>
+
+        {/* Two Images */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Image
+            src="/act1.jpg"
+            alt="AGM Image 1"
+            width={600}
+            height={350}
+            className="rounded-xl shadow-lg"
+          />
+          <Image
+            src="/act2.jpg"
+            alt="AGM Image 2"
+            width={600}
+            height={350}
+            className="rounded-xl shadow-lg"
+          />
+        </div>
+
+        {/* Exact Text Content */}
+        <div className="space-y-6 text-gray-800 leading-relaxed text-lg">
+          <p>
+          During the event, a book In Memory of Urmila was officially released, alongside the launch of the academy's official website. The book contains a total of 35 articles written in her honor. At the commencement of the program, all distinguished guests and well-wishers present paid a solemn and heartfelt tribute to the late Urmila. Following this, a one-minute silence was observed, and flowers and garlands were respectfully offered to her photograph in remembrance.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Image
+            src="/act3.jpg"
+            alt="AGM Image 1"
+            width={600}
+            height={350}
+            className="rounded-xl shadow-lg"
+          />
+          <Image
+            src="/act4.jpg"
+            alt="AGM Image 2"
+            width={600}
+            height={350}
+            className="rounded-xl shadow-lg"
+          />
+        </div>
+        <div className="space-y-6 text-gray-800 leading-relaxed text-lg">
+          <p>
+          Speaking at the program, the chief guest, Mr. Madhav Sapkota, a member of the House of Representatives from Sindhupalchowk Constituency-1, emphasized the importance of linking the congestion minimization and evacuation planning techniques developed by Professor Pyakurel and her research team to state policies. He also assured that he would incorporate the road safety bill into discussions within the Infrastructure Committee of the House of Representatives.
+          </p>
+          <p>
+          Likewise, Prof. Dr. Tanka Nath Dhamala, Chairman of the Foundation and the doctoral father of Professor Pyakurel, shared that the award serves as encouragement for researchers to extend the foundational ideas developed by Professor Pyakurel and her co-authors. He also highlighted the academy’s commitment to working in the fields of literature and health. Prof. Dhamala expressed deep gratitude to the well-wishers who contributed to the establishment of the Academy and urged everyone to continue their moral and scientific support to strengthen it in the future. He also thanked all those who played a role in making the event a great success.
+          </p>
+          <p>
+          Former Speaker of Bagmati Province, Mr. Sanu Kumar Shrestha, expressed regret over Nepal’s insufficient focus on research-based development, describing it as a significant national flaw. He emphasized Urmila's belief that practicing meditation brings concentration and peace to life. On this occasion, Prof. Dr. Kanhaiya Jha, former Dean of Kathmandu University; Mr. Shiva Prasad Neupane, former principal of Bagh Bhairav Secondary School in Sindhupalchowk; Mrs. Binda Acharya, a yoga "Guru"; Dr. Babita Paudel, president of the Nepal German Academic Association; and Mr. Kedar Prasad Bhattarai, Vice President of the Academy, shared their fond memories of Professor Pyakurel and spoke about various aspects of her remarkable life. They particularly expressed that Urmila's dedication to her ongoing research, her trust in her research father, and her belief in yoga and meditation are highly commendable. Her achievement as a young Nepali woman in becoming a Humboldtian is a remarkable milestone in the history of young Nepali scientists. Mr. Rajendra Prasad Pyakurel, an EC member of the Academy, welcomed the participants as the MC of the program.
+          </p>
+        </div>
+      </section>
+
       {/* Annual General Meeting */}
       <section className="bg-white p-10 rounded-3xl shadow-lg space-y-8 border-l-8 border-blue-500">
         <div className="space-y-3">

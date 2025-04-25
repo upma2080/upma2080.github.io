@@ -38,15 +38,22 @@ const awardsData = [
 
 const AwardsPage = () => {
   return (
-    <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-6">Awards, Fellowships, Scholarships & Support Rules</h1>
-      <div className="space-y-6">
+    <main className="container mx-auto px-6 py-12">
+      <h1 className="text-4xl font-bold text-blue-900 mb-8">
+        Awards, Fellowships, Scholarships & Support Rules
+      </h1>
+
+      <div className="space-y-8">
         {awardsData.map((award, index) => (
-          <div key={index} className="p-4 border rounded-lg shadow-md">
-            <h2 className="text-lg font-semibold">{award.category}</h2>
-            {award.institution && <p className="text-sm text-gray-700">{award.institution}</p>}
-            {award.year && <p className="text-sm text-gray-700">Year: {award.year}</p>}
-            <ul className="mt-2 list-disc list-inside">
+          <div key={index} className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+            <h2 className="text-xl font-semibold text-green-700">{award.category}</h2>
+            {award.institution && (
+              <p className="text-gray-800 mt-2">{award.institution}</p>
+            )}
+            {award.year && (
+              <p className="text-gray-800 mt-2">Year: {award.year}</p>
+            )}
+            <ul className="mt-3 list-disc list-inside">
               {award.recipients.map((recipient, i) => (
                 <li key={i} className="text-gray-800">{recipient}</li>
               ))}
@@ -54,7 +61,7 @@ const AwardsPage = () => {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import ResearchLinks from "../../../components/ResearchLinks";
 
 export default function ResearchPage() {
   const [activeTab, setActiveTab] = useState("publications");
@@ -23,12 +24,7 @@ export default function ResearchPage() {
         </div>
       )}
 
-      {activeTab === "links" && (
-        <div>
-          <p className="text-gray-700">Important Research Links here...</p>
-        </div>
-      )}
-
+{activeTab === "links" && <ResearchLinks />}
 {activeTab === "publications" && (
   <div className="space-y-8">
     <h2 className="text-2xl font-bold text-blue-900 mb-4">Posthumous Publications of Prof. Pyakurel</h2>
