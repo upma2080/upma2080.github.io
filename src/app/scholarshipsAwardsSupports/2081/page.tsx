@@ -46,7 +46,7 @@ const AwardsPage = () => {
       <div className="space-y-8">
         {awardsData.map((award, index) => (
           <div key={index} className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-            <h2 className="text-xl font-semibold text-green-700">{award.category}</h2>
+            <h2 className="text-xl font-semibold text-blue-700">{award.category}</h2>
             {award.institution && (
               <p className="text-gray-800 mt-2">{award.institution}</p>
             )}

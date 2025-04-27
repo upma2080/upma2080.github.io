@@ -12,7 +12,7 @@ export default function ResearchPage() {
 
       {/* Sub-tabs */}
       <div className="flex space-x-8 border-b border-gray-300 mb-8">
-        <button onClick={() => setActiveTab("team")} className={`pb-2 ${activeTab === "team" && "border-b-4 border-blue-900 font-semibold"}`}>Team Members</button>
+        {/* <button onClick={() => setActiveTab("team")} className={`pb-2 ${activeTab === "team" && "border-b-4 border-blue-900 font-semibold"}`}>Team Members</button> */}
         <button onClick={() => setActiveTab("links")} className={`pb-2 ${activeTab === "links" && "border-b-4 border-blue-900 font-semibold"}`}>Links</button>
         <button onClick={() => setActiveTab("publications")} className={`pb-2 ${activeTab === "publications" && "border-b-4 border-blue-900 font-semibold"}`}>Publications</button>
       </div>

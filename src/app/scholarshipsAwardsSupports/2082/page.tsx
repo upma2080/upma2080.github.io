@@ -38,7 +38,7 @@ export default function Page() {
         {publications.map((publication, index) => (
           <div key={index} className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
             <p className="font-semibold text-gray-800">{publication.authors}</p>
-            <h2 className="text-xl font-semibold text-green-700 mt-2">{publication.title}</h2>
+            <h2 className="text-xl font-semibold text-blue-700 mt-2">{publication.title}</h2>
             <p className="italic text-gray-600 mt-1">{publication.journal} ({publication.year})</p>
             {publication.doi !== "#" && (
               <Link
