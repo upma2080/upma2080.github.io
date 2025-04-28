@@ -12,17 +12,17 @@ export default function MadhushreePage() {
     },
     "/Madhurash.pdf": {
       title: "Urmila in Memory",
-      description: `This souvenir compiles Prof. Dr. Urmila Pyakurel's journey—from her childhood, education, and family background to her academic rise from deputy to full professor—highlighting her perseverance, literary passion, international travels (Japan, the Philippines, Germany), and the love and support from relatives, friends, mentors, classmates, journalists, teachers, and students worldwide.`,
+      description: `This souvenir compiles Prof. Dr. Urmila Pyakurel's journey—from her childhood, education, and family background to her academic rise from deputy to full professor—highlighting her perseverance, literary passion, international travels (Japan, the Philippines, Germany), and the love and support from relatives, friends, mentors, classmates, journalists, teachers, and students worldwide.`,
     },
-  };
+  } as const; // 👉 Important! Freeze the object types
 
-  const [selectedBook, setSelectedBook] = useState("/Madhurash.pdf");
+  type BookPath = keyof typeof books; // 👉 Set proper type for book paths
+
+  const [selectedBook, setSelectedBook] = useState<BookPath>("/Madhurash.pdf");
 
   return (
     <main className="container mx-auto px-6 py-12">
       <h1 className="text-4xl font-bold text-blue-700 mb-6">मधुश्री</h1>
-
-      
 
       {/* Book selection */}
       <h2 className="text-2xl font-semibold text-blue-600 mb-4">पुस्तक छान्नुहोस्:</h2>
@@ -31,7 +31,7 @@ export default function MadhushreePage() {
         <select
           className="border border-gray-300 rounded px-4 py-2 text-lg"
           value={selectedBook}
-          onChange={(e) => setSelectedBook(e.target.value)}
+          onChange={(e) => setSelectedBook(e.target.value as BookPath)} // 👉 cast properly
         >
           {Object.entries(books).map(([path, book]) => (
             <option key={path} value={path}>
@@ -40,10 +40,12 @@ export default function MadhushreePage() {
           ))}
         </select>
       </div>
-          {/* Description */}
+
+      {/* Description */}
       <p className="text-gray-800 text-lg mb-8 leading-relaxed">
         {books[selectedBook].description}
       </p>
+
       {/* PDF Viewer */}
       <div className="w-full h-[80vh] border shadow-lg rounded overflow-hidden">
         <iframe
