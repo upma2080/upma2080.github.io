@@ -103,11 +103,6 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/members" className={`hover:underline ${isActive('/members') ? 'text-yellow-300 font-bold' : ''}`}>
-                Members
-              </Link>
-            </li>
-            <li>
               <Link href="/activities" className={`hover:underline ${isActive('/activities') ? 'text-yellow-300 font-bold' : ''}`}>
                 Activities
               </Link>
@@ -150,6 +145,11 @@ const Header: React.FC = () => {
             <li>
               <Link href="/research" className={`hover:underline ${isActive('/research') ? 'text-yellow-300 font-bold' : ''}`}>
                 Research
+              </Link>
+            </li>
+            <li>
+              <Link href="/members" className={`hover:underline ${isActive('/members') ? 'text-yellow-300 font-bold' : ''}`}>
+                Members
               </Link>
             </li>
           </ul>

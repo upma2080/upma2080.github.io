@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
       {/* Footer Bottom Bar */}
       <div className="bg-gray-700 py-4 mt-12 text-center text-gray-400">
         <p className="text-sm"> © Prof. Dr. Urmila Pyakurel Madhushree Academy | All Rights Reserved</p>
-        <p className="text-sm">Designed by Sunil Regmi</p>
+        <p className="text-[7px]">Designed by <a href="https://ku.edu.np/contact-detail/sunil-regmi">Sunil Regmi</a></p>
       </div>
     </footer>
   );

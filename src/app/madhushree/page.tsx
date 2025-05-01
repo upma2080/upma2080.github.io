@@ -21,11 +21,11 @@ export default function MadhushreePage() {
   const [selectedBook, setSelectedBook] = useState<BookPath>("/Madhurash.pdf");
 
   return (
-    <main className="container mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold text-blue-700 mb-6">मधुश्री</h1>
+    <main className="container mx-auto px-6 py-6">
+      {/* <h1 className="text-4xl font-bold text-blue-700 mb-6">मधुश्री</h1> */}
 
       {/* Book selection */}
-      <h2 className="text-2xl font-semibold text-blue-600 mb-4">पुस्तक छान्नुहोस्:</h2>
+      <h2 className="text-2xl font-semibold text-blue-600 mb-4">Select a book:</h2>
 
       <div className="mb-6">
         <select
