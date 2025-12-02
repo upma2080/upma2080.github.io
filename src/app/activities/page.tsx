@@ -24,14 +24,14 @@ export default function Activities() {
         {/* Two Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Image
-            src="/agm082-1.jpg"
+            src="/agm082-1.png"
             alt="AGM Image 1"
             width={600}
             height={350}
             className="rounded-xl shadow-lg"
           />
           <Image
-            src="/agm082-2.jpg"
+            src="/agm082-2.png"
             alt="AGM Image 2"
             width={600}
             height={350}
@@ -55,14 +55,14 @@ export default function Activities() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Image
-            src="/agm082-3.jpg"
+            src="/agm082-3.png"
             alt="AGM Image 1"
             width={600}
             height={350}
             className="rounded-xl shadow-lg"
           />
           <Image
-            src="/agm082-4.jpg"
+            src="/agm082-4.png"
             alt="AGM Image 2"
             width={600}
             height={350}
