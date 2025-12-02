@@ -34,7 +34,7 @@ export default function Activities() {
             src="/agm082-2.png"
             alt="AGM Image 2"
             width={600}
-            height={350}
+            height={355}
             className="rounded-xl shadow-lg"
           />
         </div>
