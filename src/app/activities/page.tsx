@@ -69,6 +69,7 @@ export default function Activities() {
             className="rounded-xl shadow-lg"
           />
         </div>
+        <h2 className="text-1xl font-semibold text-blue-800">Honoring Excellence in Memory of Prof. Urmila Pyakurel</h2>
       </section>
 
       <section className="bg-white p-10 rounded-3xl shadow-lg space-y-8 border-l-8 border-blue-500">
