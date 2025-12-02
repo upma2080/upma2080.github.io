@@ -9,7 +9,71 @@ export default function Activities() {
 
       <section className="bg-white p-10 rounded-3xl shadow-lg space-y-8 border-l-8 border-blue-500">
         <div className="space-y-3">
-          <h2 className="text-3xl font-semibold text-blue-800">Second memorial day of Prof. Dr. Urmila Pyakurel</h2>
+          <h2 className="text-3xl font-semibold text-blue-800">Second AGM Meeting and Award Ceremony</h2>
+          <p className="text-gray-600 text-lg">📅 Date: November 15, 2025 ( Kartik 29, 2082)</p>
+          <p>The Prof. Dr. Urmila Pyakurel Madhushree Foundation held its second Annual General Meeting (AGM) on 29 Kartik 2082 B.S. 
+            in Kathmandu. During the event, the foundation—established in memory of Tribhuvan University’s late mathematics professor 
+            Dr. Urmila Pyakurel—honored four individuals in the academic field and one in the literary field. Outstanding postgraduate 
+            students from the TU Department of Mathematics, Gangaram Joshi and Vidya Pokharel, received NPR 25,000 each along with certificates. 
+            Likewise, Sabina Budhathoki, the top SEE 2081 student from Bagh  Bhairav Secondary School, Thokarpa, Sindhupalchok, and Dipesh 
+            Bishwokarma, the top student from Kalika Basic School, Ukhubari, were awarded NPR 15,000 and NPR 10,000 respectively. 
+            The literary award, established to honor Dr. Pyakurel’s literary legacy, was presented to epic poet Chandra Prasad Neupane, 
+            who received NPR 20,000 and a certificate.</p>
+        </div>
+
+        {/* Two Images */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Image
+            src="/agm082-1.jpg"
+            alt="AGM Image 1"
+            width={600}
+            height={350}
+            className="rounded-xl shadow-lg"
+          />
+          <Image
+            src="/agm082-2.jpg"
+            alt="AGM Image 2"
+            width={600}
+            height={350}
+            className="rounded-xl shadow-lg"
+          />
+        </div>
+
+        {/* Exact Text Content */}
+        <div className="space-y-6 text-gray-800 leading-relaxed text-lg">
+          <p>
+          The awards were presented by the chief guest Prof. Dr. Shailendra Kumar Mishra of the Department of Mathematics, 
+            Institute of Engineering, Tribhuvan University, along with Foundation Chair Prof. Dr. Tanka Nath Dhamala and Secretary 
+            Uddhav Prasad Pyakurel. Secretary Uddhav Prasad Pyakurel and Treasurer Nawaraj Sapkota also presented their annual reports 
+            during the assembly. Several speakers, including Prof. Mishra, awardees Vidya Pokharel and Chandra Prasad Neupane, Associate 
+            Professor Tulsi Nepal, teacher Chhatra Prasad Neupane, and Babita Paudel, President of the Nepal-German Academic Association 
+            and Vice-President of the Academy Kedar Prasad Bhattarai, highlighted Dr. Pyakurel’s remarkable academic and literary contributions.
+            The program was chaired by the President of the foundation. Dr. Pyakurel had become a professor at the age of 42 and passed away 
+            two years ago. The foundation was created using NPR 5 million collected for her medical treatment, supplemented by additional 
+            contributions from family members.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Image
+            src="/agm082-3.jpg"
+            alt="AGM Image 1"
+            width={600}
+            height={350}
+            className="rounded-xl shadow-lg"
+          />
+          <Image
+            src="/agm082-4.jpg"
+            alt="AGM Image 2"
+            width={600}
+            height={350}
+            className="rounded-xl shadow-lg"
+          />
+        </div>
+      </section>
+
+      <section className="bg-white p-10 rounded-3xl shadow-lg space-y-8 border-l-8 border-blue-500">
+        <div className="space-y-3">
+          <h2 className="text-3xl font-semibold text-blue-800">Second Memorial Day of Prof. Dr. Urmila Pyakurel</h2>
           <p className="text-gray-600 text-lg">📅 Date: April 19, 2025 ( Baisakh 6, 2082)</p>
           <p>On the occasion of the second memorial day of Prof. Dr. Urmila Pyakurel, the &quot;Prof. Dr.
 Urmila Pyakurel Madhushree Academy&quot; honored two researchers, Dr. Durga Prasad
