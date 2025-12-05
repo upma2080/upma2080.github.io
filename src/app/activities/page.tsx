@@ -54,8 +54,8 @@ export default function Activities() {
           </p>
           <p>Media coverage of the Second AGM Meeting and Award Ceremony can be viewed through the following links:</p>
             <ul>
-                <li><a href="https://gorkhapatraonline.com/news/179786" target="_blank">Gorkhapatra Online</a></li>
-                <li><a href="https://www.swarnapatra.com/samacharpatra/5923/" target="_blank">Swarnapatra</a></li>
+                <li><a href="https://gorkhapatraonline.com/news/179786" target="_blank"className="text-blue-600 underline">Gorkhapatra Online</a></li>
+                <li><a href="https://www.swarnapatra.com/samacharpatra/5923/" target="_blank"className="text-blue-600 underline">Swarnapatra</a></li>
             </ul>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
