@@ -52,6 +52,11 @@ export default function Activities() {
             two years ago. The foundation was created using NPR 5 million collected for her medical treatment, supplemented by additional 
             contributions from family members.
           </p>
+          <p>Media coverage of the Second AGM Meeting and Award Ceremony can be viewed through the following links:</p>
+            <ul>
+                <li><a href="https://gorkhapatraonline.com/news/179786" target="_blank">Gorkhapatra Online</a></li>
+                <li><a href="https://www.swarnapatra.com/samacharpatra/5923/" target="_blank">Swarnapatra</a></li>
+            </ul>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Image
